@@ -1,0 +1,27 @@
+#ifndef _CORE_H_
+#define _CORE_H_
+
+#define GLEW_STATIC
+
+#ifdef __APPLE__
+#include <OpenGL/gl3.h>
+#else
+#include <GL/glew.h>
+#endif
+
+#include <glm/glm.hpp>
+#include <glm/gtx/transform.hpp>
+#include "glm/gtx/euler_angles.hpp"
+#include <glm/gtc/type_ptr.hpp>
+#include <vector>
+#include <ctype.h>
+
+#include <algorithm>
+#include <string>
+#include <iostream>
+
+#include <map>
+#include <utility>
+#include <tuple>
+
+#endif
