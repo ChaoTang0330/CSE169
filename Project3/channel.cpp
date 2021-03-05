@@ -108,10 +108,10 @@ void Channel::precompute()
 	}
 	else
 	{
-		keyframes[0]->iniTangent(nullptr, keyframes[1]);
+		keyframes.front()->iniTangent(nullptr, keyframes[1]);
 		for (int i = 1; i < numOfKeys - 1; i++)
 		{
-			keyframes[0]->iniTangent(keyframes[i - 1], keyframes[i + 1]);
+			keyframes[i]->iniTangent(keyframes[i - 1], keyframes[i + 1]);
 		}
 		keyframes.back()->iniTangent(keyframes[numOfKeys - 2], nullptr);
 

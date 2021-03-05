@@ -124,7 +124,7 @@ void Keyframe::iniCubic(Keyframe* nextFrame)
 
 float Keyframe::evaluate(float t)
 {
-	if (abs(deltaT) < 1e-5) return D;
+	//if (abs(deltaT) < 1e-5) return D;
 
 	float u = (t - time) / deltaT;
 	return D + u * (C + u * (B + u * A));

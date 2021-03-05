@@ -10,7 +10,7 @@ private:
 	float time;
 	float value;
 	float tangent[2] = {0};
-	int rule[2] = {0};
+	int rule[2];
 
 	float A, B, C, D;
 	float deltaT;
