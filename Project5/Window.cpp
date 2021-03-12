@@ -483,13 +483,13 @@ void Window::plotImGUI()
 	if (ImGui::TreeNode("Ground"))
 	{
 		glm::vec3 center = particleSys->GetGroundCenter();
-		if (ImGui::InputFloat3("V_wind", glm::value_ptr(center)))
+		if (ImGui::InputFloat3("Center", glm::value_ptr(center)))
 		{
 			particleSys->SetGroundCenter(center);
 		}
 
 		float size = particleSys->GetGroundSize();
-		if (ImGui::DragFloat("size", &size))
+		if (ImGui::DragFloat("Size", &size))
 		{
 			particleSys->SetGroundSize(size);
 		}
